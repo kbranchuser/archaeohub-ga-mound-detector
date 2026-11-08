@@ -1,0 +1,2 @@
+python scripts/train.py runs/final/stageA --iters 3000 --recipe relief6 --pre --workers 2
+python scripts/train.py runs/final/all --iters 1500 --init runs/final/stageA/ckpt_final.pt --fold -1 --recipe relief6 --pre --workers 2

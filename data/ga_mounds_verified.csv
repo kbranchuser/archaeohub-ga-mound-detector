@@ -1,0 +1,29 @@
+site,feature,label,type,lat,lon,evidence,confidence,condition
+Etowah,Etowah Mound A,mound,platform,34.1250,-84.8075,State historic site published coord; LiDAR-confirmed,high,intact
+Ocmulgee,Great Temple Mound,mound,platform,32.83666,-83.60827,LiDAR peak = park published coord; 17 m platform with ramp,high,intact
+Ocmulgee,Lesser Temple Mound,mound,platform,32.83757,-83.60815,LiDAR; railroad cut matches park history,medium,damaged - railroad cut
+Ocmulgee,Funeral Mound,mound,platform/burial,32.83946,-83.61014,LiDAR; railroad-truncated long mound south of tracks matches park history,medium,damaged - railroad cut
+Ocmulgee,Earth Lodge (reconstructed),reconstruction,earth lodge,32.84104,-83.60511,LiDAR; small dome near visitor center,high,1930s reconstruction - do not train as original
+Ocmulgee,I-16 bridge abutment,lookalike,highway structure,32.83911,-83.61748,LiDAR,high,negative example
+Ocmulgee,I-16 bridge abutment 2,lookalike,highway structure,32.83915,-83.61849,LiDAR,high,negative example
+Ocmulgee,Creek bank meander,lookalike,natural levee,32.83713,-83.60228,LiDAR,high,negative example
+Ocmulgee,Road embankment,lookalike,road fill,32.83918,-83.60064,LiDAR,high,negative example
+Ocmulgee,Village trenches,earthwork,ditch,32.84175,-83.60631,LiDAR: long linear ditches in village area matching park map Trenches,medium,not a mound - context
+Ocmulgee,Civil War earthwork (V-shaped),lookalike,historic fortification,32.84495,-83.60187,LiDAR V-shaped raised outline north of visitor center where park map places Civil War earthwork,medium,negative example - historic earthwork
+Kolomoki,Mound A (Temple Mound),mound,platform,31.46909,-84.93987,5 km LiDAR search: 17.1 m rise = published 17 m height; flat top + ramp visible,high,intact
+Kolomoki,Conical mound W of plaza (likely Mound D or E),mound,conical/burial,31.46858,-84.94339,"LiDAR: isolated round mound ~25 m across, 3.8-4.6 m high, 330 m W of Mound A",high (mound) / medium (which letter),intact
+Ocmulgee 5km,Irregular debris piles (floodplain S of I-16),lookalike,spoil/debris,32.82929,-83.61847,"5 km LiDAR search: multi-lobed rough piles, not smooth mound forms",medium,negative example
+Ocmulgee 5km,Irregular debris pile 2,lookalike,spoil/debris,32.82186,-83.63318,5 km LiDAR search,medium,negative example
+Ocmulgee 5km,Irregular debris piles 3,lookalike,spoil/debris,32.82595,-83.60634,5 km LiDAR search,medium,negative example
+Ocmulgee 5km,Oval track ring,lookalike,sports/race track,32.84024,-83.62600,5 km LiDAR search,high,negative example
+Ocmulgee 5km,Large graded city lot,lookalike,graded pad,32.84903,-83.61172,5 km LiDAR search,high,negative example
+Lamar,Lamar Mound A,mound,platform (rectangular),32.81218,-83.59269,5 km LiDAR search + 1 m view: square flat-topped mound ~50 m from published 9BI2 coord; ~7.5 m above surrounding floodplain (published 10.7 m - floodplain silt has buried the base),high,intact
+Lamar,Lamar Mound B (spiral mound),mound,circular with spiral ramp,32.81245,-83.59069,5 km LiDAR search + 1 m view: round mound 190 m E of A; ~5.9 m high (published 6.1 m); spiral ramp not resolved at 1 m,high,intact
+Lamar 5km,Pond dikes (rectangular),lookalike,levee/dike,32.80334,-83.57713,5 km LiDAR search,high,negative example
+Lamar 5km,L-shaped floodplain levee,lookalike,levee,32.81300,-83.58950,1 m view: long straight embankment beside the mounds,high,negative example
+Nacoochee,Nacoochee Mound,reconstruction,"platform (round, flat summit)",34.68352,-83.70901,5 km LiDAR search hit exactly at published coord; 1 m view: round flat-topped mound ~5.2 m tall in a hayfield,high,"REBUILT after 1915 excavation; 1890 gazebo on summit - usable as a shape example at lower weight, not as an original"
+Nacoochee 5km,Rocky knoll in Helen,lookalike,natural knoll + development,34.70156,-83.72701,"5 km search: compact 6.6 m rise, but irregular/rocky with graded lots around it",high,negative example
+Rock Eagle,Rock Eagle Effigy (stone),effigy,quartz-cobble bird effigy,33.41754,-83.38814,"1 m LiDAR: low rounded hump (body/breast) inside a circular modern path; wings, head and tail not resolved at 1 m",high (location) / low (shape),"intact, fenced; only the body is LiDAR-visible - keep out of mound training (different construction + shape not captured)"
+Rock Hawk,Rock Hawk Effigy (stone),effigy,quartz-cobble bird effigy,33.34516,-83.17520,"1 m LiDAR: <1 m raised patch at end of a trail near published coord (33.344883,-83.175033); shape not resolved - may include the viewing structure",medium (location) / low (shape),not usable for training
+Etowah,Etowah Mound B (square platform E of A),mound,platform,34.12464,-84.80667,LiDAR: unmistakable square platform ~80 m E of Mound A inside the state historic site (6 mounds A-F published),high,intact
+Etowah,Etowah Mound C (platform S of A),mound,platform,34.12398,-84.80783,"LiDAR scout #2, 6.5 m square platform S of Mound A inside the state historic site",high,intact

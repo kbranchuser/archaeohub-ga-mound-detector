@@ -1,0 +1,6 @@
+for R in relief3 relief6; do
+  python scripts/train.py runs/$R/stageA --iters 3000 --recipe $R --workers 3
+  for F in 0 1 2 3; do
+    python scripts/train.py runs/$R/fold$F --iters 1500 --init runs/$R/stageA/ckpt_final.pt --fold $F --recipe $R --workers 3
+  done
+done

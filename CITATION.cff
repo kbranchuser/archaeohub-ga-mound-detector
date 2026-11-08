@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this detector, please cite it and the Davis et al. (2021) model it is built on."
+title: "archaeohub-ga-mound-detector: LiDAR mound detection for Georgia"
+authors:
+  - family-names: Branch
+    given-names: Kelob
+version: "1.0"
+date-released: 2026-11-08
+license: MIT
+repository-code: "https://github.com/kbranchuser/archaeohub-ga-mound-detector"
+url: "https://archaeohub.org"
+keywords: [archaeology, lidar, deep-learning, mask-rcnn, mounds, georgia]
+references:
+  - type: article
+    title: "Deep learning reveals extent of Archaic Native American shell-ring building practices"
+    authors:
+      - family-names: Davis
+        given-names: Dylan S.
+      - family-names: Caspari
+        given-names: Gino
+      - family-names: Lipo
+        given-names: Carl P.
+      - family-names: Sanger
+        given-names: Matthew C.
+    journal: "Journal of Archaeological Science"
+    volume: 132
+    start: 105433
+    year: 2021
+    doi: "10.1016/j.jas.2021.105433"
+  - type: data
+    title: "Deep learning model and training data for shell ring and mound detection (South Carolina)"
+    authors:
+      - family-names: Davis
+        given-names: Dylan S.
+      - family-names: Caspari
+        given-names: Gino
+      - family-names: Lipo
+        given-names: Carl P.
+      - family-names: Sanger
+        given-names: Matthew C.
+    year: 2021
+    doi: "10.26207/ry6k-q463"
+    license: CC-BY-4.0

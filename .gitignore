@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+# Large / third-party / sensitive data — never committed. See docs/DATA.md.
+data/
+models/
+outputs/
+*.tif
+*.pth
+*.pt
+*.dlpk
+*.laz
+# Detections can contain archaeological site locations — keep them out of git.
+detections/
+runs/
+
+# public test list (public-land sites only) is shipped
+!data/
+data/*
+!data/ga_mounds_verified.csv
