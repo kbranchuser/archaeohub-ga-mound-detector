@@ -17,8 +17,8 @@ relief inputs that carry over between regions, artificial training mounds placed
 Georgia terrain, look-alike training (road fills, bluffs, abutments, house pads),
 out-of-state park mounds, hard-negative mining, and honest leave-one-site-out testing.
 
-On 18 known Georgia mounds, each scored by a version that never saw that site, it finds
-**14 of 18 (78%)**; the original model found 5 of 18.
+On 21 known Georgia mounds, each scored by a version that never saw that site, it finds
+**16 of 21 (76%)**; the original model finds 7 of 21.
 
 > **Site-protection rule.** This project publishes models and methods, **never the
 > locations of possible sites**. Please don't post coordinates of anything the detector
@@ -32,7 +32,7 @@ On 18 known Georgia mounds, each scored by a version that never saw that site, i
 - **Public test list** (`data/ga_mounds_verified.csv`): the test mounds and look-alikes on
   **public land only** (Etowah, Ocmulgee and its Lamar unit, Kolomoki, Nacoochee, Rock
   Eagle, Rock Hawk). The 8 Rood's Landing mounds and sites on private land are withheld,
-  so this list covers 10 of the 18 test mounds (the model finds 8 of those 10).
+  so this list covers 13 of the 21 test mounds (the model finds 10 of those 13).
 - **Not included:** the training scenes and mined negatives (they contain locations of
   ordinary private land), and the trained weights, which are published as release assets.
 
@@ -43,8 +43,11 @@ retraining round) and publishes new versions here as releases.
 
 | Model | Known Georgia mounds found | Look-alikes wrongly flagged |
 |---|---|---|
-| Davis et al. (2021), unmodified | 5 of 18 (28%) | 2 of 18 |
-| **This model (v1.0)** | **14 of 18 (78%)** | 2 of 18 |
+| Davis et al. (2021), unmodified | 7 of 21 (33%) | 2 of 18 |
+| **This model (v1.0.1)** | **16 of 21 (76%)** | 2 of 18 |
+
+v1.0.1 added three mounds to the test list (18 → 21). On the original 18 the score is
+unchanged from v1.0: 14 of 18, against 5 of 18 for the original model.
 
 Each site was scored by a version of the model trained without it (leave-one-site-out).
 Details, limits and the public test subset are in [MODEL_CARD.md](MODEL_CARD.md); what

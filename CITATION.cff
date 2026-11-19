@@ -4,8 +4,8 @@ title: "archaeohub-ga-mound-detector: LiDAR mound detection for Georgia"
 authors:
   - family-names: Branch
     given-names: Kelob
-version: "1.0"
-date-released: 2026-11-08
+version: "1.0.1"
+date-released: 2026-11-19
 license: MIT
 repository-code: "https://github.com/kbranchuser/archaeohub-ga-mound-detector"
 url: "https://archaeohub.org"

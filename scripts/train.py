@@ -66,7 +66,7 @@ params = [p for p in model.parameters() if p.requires_grad]
 opt = torch.optim.SGD(params, lr=LR, momentum=0.9, weight_decay=1e-4)
 lr_at = lambda it: LR * (it / WARMUP if it < WARMUP else 0.5 * (1 + math.cos(math.pi * (it - WARMUP) / max(ITERS - WARMUP, 1))))
 SEED = 0 if args.fold is None else 10 + args.fold
-_kind = lambda i: i.split("_")[0]   # real / oos / mined
+_kind = lambda i: i.split("_")[0]   # real / oos / mined / houses
 buckets = [[k for k, i in enumerate(real_ids) if _kind(i) == kd] for kd in sorted({_kind(i) for i in real_ids})] if real_ids else []
 
 

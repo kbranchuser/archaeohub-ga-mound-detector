@@ -179,6 +179,7 @@ def run_reading(job, models, names, dev, progress):
 
 
 def default_ckpts():
-    final = ROOT / "runs/final/all/ckpt_final.pt"
-    if final.exists(): return [str(final)]
+    for p in ("runs/final/all/ckpt_final.pt",    # where the release download goes
+              "runs/houses/all/ckpt_final.pt"):  # where aws/jobs_houses.txt writes a retrained model
+        if (ROOT / p).exists(): return [str(ROOT / p)]
     return sorted(glob.glob(str(ROOT / "runs/mined6/fold*/ckpt_final.pt")))

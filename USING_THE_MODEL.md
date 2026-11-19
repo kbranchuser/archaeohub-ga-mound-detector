@@ -14,8 +14,8 @@ compact rises that look like human-made mounds.
 
 ## What it's good at (and not)
 
-- **Tested on:** 18 known mounds in Georgia, each scored by a version of the model that
-  never saw that site. It found **14 of 18 (78%)** and wrongly flagged **2 of 18**
+- **Tested on:** 21 known mounds in Georgia, each scored by a version of the model that
+  never saw that site. It found **16 of 21 (76%)** and wrongly flagged **2 of 18**
   look-alike places (a bridge abutment and a rocky knoll).
 - **Works best on:** platform and conical mounds, roughly 1 m high or more, in the
   Southeastern US.
@@ -71,6 +71,9 @@ on top of it.
 ```
 runs/final/all/ckpt_final.pt
 ```
+
+Upgrading from an older release? Download the new `ckpt_final.pt` and replace the old
+file at the same path.
 
 ## 4. Run it
 

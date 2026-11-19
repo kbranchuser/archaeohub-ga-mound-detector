@@ -27,3 +27,6 @@ Rock Eagle,Rock Eagle Effigy (stone),effigy,quartz-cobble bird effigy,33.41754,-
 Rock Hawk,Rock Hawk Effigy (stone),effigy,quartz-cobble bird effigy,33.34516,-83.17520,"1 m LiDAR: <1 m raised patch at end of a trail near published coord (33.344883,-83.175033); shape not resolved - may include the viewing structure",medium (location) / low (shape),not usable for training
 Etowah,Etowah Mound B (square platform E of A),mound,platform,34.12464,-84.80667,LiDAR: unmistakable square platform ~80 m E of Mound A inside the state historic site (6 mounds A-F published),high,intact
 Etowah,Etowah Mound C (platform S of A),mound,platform,34.12398,-84.80783,"LiDAR scout #2, 6.5 m square platform S of Mound A inside the state historic site",high,intact
+Kolomoki,Mound E,mound,low mound (excavated + rebuilt),31.46833,-84.94854,OSM way 336680289 outline; LiDAR summit ~1.8 m local relief (2026-11-15),medium,rebuilt
+Kolomoki,Mound F,mound,low mound,31.46663,-84.94819,OSM way 336472926 outline; LiDAR low round mound ~2 m (2026-11-15),medium,intact
+Ocmulgee,McDougal Mound,mound,small mound on terrace,32.84630,-83.60813,OSM node 3781523389; LiDAR distinct round mound on raised terrace (2026-11-15),medium,intact

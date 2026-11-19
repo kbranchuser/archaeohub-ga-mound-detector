@@ -38,6 +38,8 @@ archaeological review.
   IN, used for training only.
 - **Hard negatives:** about 277 false flags from 400 random Georgia areas, each reviewed by a
   person.
+- **House pads (new in v1.0.1):** 240 scenes centred on real rural and suburban Georgia
+  buildings (Microsoft footprints), giving 3,012 graded pads as "not a mound" examples.
 - Developed land was masked out of synthetic placement using NLCD 2021.
 
 Site-file (DINAA) coordinates were not used. The training scenes are not published, because
@@ -49,25 +51,34 @@ the random areas are ordinary private land.
 (leave-one-site-out, 4 folds). A hit is a Mound or Ring detection with score ≥ 0.5 within
 40 m of the feature.
 
-| Model | Mounds found (of 18) | Look-alikes flagged (of 18) |
+| Model | Mounds found (of 21) | Look-alikes flagged (of 18) |
 |---|---|---|
-| Davis et al. (2021), unmodified | 5 (28%) | 2 |
-| **This model** | **14 (78%)** | **2** |
+| Davis et al. (2021), unmodified | 7 (33%) | 2 |
+| **This model (v1.0.1)** | **16 (76%)** | **2** |
 
-- **Found:** Etowah A, B, C; Ocmulgee Great Temple; Kolomoki A and a conical mound;
+- **Found:** Etowah A, B, C; Ocmulgee Great Temple; Kolomoki A, E, F and a conical mound;
   6 of 8 Rood's Landing mounds (a site never seen in training); Lamar A and B.
-- **Missed:** Ocmulgee Lesser Temple and Funeral Mound (both cut by a railroad), and two
-  small Rood's Landing platforms.
-- **False alarms:** an I-16 bridge abutment (0.82) and a rocky knoll in Helen (0.57).
+- **Missed:** Ocmulgee Lesser Temple and Funeral Mound (both cut by a railroad), Ocmulgee
+  McDougal Mound (a small mound on a raised terrace), and two small Rood's Landing
+  platforms.
+- **False alarms:** an I-16 bridge abutment (0.63) and a rocky knoll in Helen (0.76).
 - **Public test list:** the published `data/ga_mounds_verified.csv` keeps only public-land
-  sites: 10 of the 18 mounds, of which the model finds 8.
+  sites: 13 of the 21 mounds, of which the model finds 10.
+- **Test list history:** v1.0 was scored on 18 mounds (14 found; original model 5).
+  v1.0.1 added Kolomoki E and F and Ocmulgee McDougal. On the original 18, v1.0.1 scores
+  the same 14 of 18 with the same two false alarms.
+- **House pads in real use:** on 15 private scan squares, spots within 30 m of a building
+  fell from 13 (v1.0) to 5 (v1.0.1). Spots away from buildings also changed (4 dropped,
+  6 new); those have not been field-checked, so that change is neither a gain nor a loss
+  yet.
 
-18 test mounds is a small number; treat the percentages as rough.
+21 test mounds is a small number; treat the percentages as rough.
 
 ## Known limitations
 
 - **Graded ground looks like platforms.** House pads, lots, road and railroad fills, dam
-  embankments and spoil piles are the commonest false alarms. Spots are tagged with land
+  embankments and spoil piles are the commonest false alarms. v1.0.1 flags fewer house
+  pads but still flags some. Spots are tagged with land
   cover and nearest-building distance to help, but they are not hidden.
 - **Low or damaged mounds** (plowed down, cut by roads or railroads, under 1 m) are often
   missed.

@@ -21,6 +21,7 @@ aws s3 cp $S3/pre-v3-oos.tar - --only-show-errors | tar x      # + out-of-state 
 aws s3 cp $S3/pre-v4-mined.tar - --only-show-errors | tar x    # + reviewed false flags from random Georgia ground
 rm -f data/training/v1/scenes/real_* data/training/v1/pre/real_*  # real scenes were rebuilt (18 test mounds)
 aws s3 cp $S3/pre-v5-real.tar - --only-show-errors | tar x
+aws s3 cp $S3/pre-v6-houses.tar - --only-show-errors | tar x 2>/dev/null || true   # + house-pad negatives (scripts/build_house_negatives.py)
 aws s3 cp $S3/code-latest.tar - --only-show-errors | tar x      # newer code + eval tiles over the data bundle
 date -u
 __JOBS__

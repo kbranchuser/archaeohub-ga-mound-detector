@@ -1,0 +1,6 @@
+mkdir -p runs
+aws s3 cp $S3/runs/test18-v1/test18/stageA/ckpt_final.pt runs/stageA_synth.pt --only-show-errors   # stage A (synthetic only) is unchanged; reuse it
+for F in 0 1 2 3; do
+  python scripts/train.py runs/houses/fold$F --iters 1500 --init runs/stageA_synth.pt --fold $F --recipe relief6 --pre --workers 2
+done
+python scripts/train.py runs/houses/all --iters 1500 --init runs/stageA_synth.pt --fold -1 --recipe relief6 --pre --workers 2
