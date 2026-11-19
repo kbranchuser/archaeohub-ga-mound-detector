@@ -7,6 +7,7 @@ Georgia. This is the open-source release of the detector behind the private
 - **Just want to run it on your own area?** → [USING_THE_MODEL.md](USING_THE_MODEL.md)
 - **What it's good at, its limits and its test record** → [MODEL_CARD.md](MODEL_CARD.md)
 - **What changed in each version** → [RELEASE_NOTES.md](RELEASE_NOTES.md)
+- **Want to contribute?** → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 It starts from the model of **Dylan S. Davis, Gino Caspari, Carl P. Lipo and Matthew C. Sanger**
 ([Davis et al. 2021](https://doi.org/10.1016/j.jas.2021.105433); [model and data](https://doi.org/10.26207/ry6k-q463), CC BY 4.0),
